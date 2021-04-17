@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Viewport for Mobile-viewing interface-->
+    <title>Contact Pierre Yue</title>
+    <link rel="webpage icon" href="IMG/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--Normalize for checking web context-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet"> <!--Adding Google Font: Crimson Pro-->
+    <link rel="stylesheet" type="text/css" href="CSS/style.production.css"> <!--Linking to CSS document-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="page-header">
+      <span></span>
+      <span></span>
+      <span></span>
+      <nav class="dropdown-menu">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About Me</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="work.html"><li>My Work</li></a>
+          </ul>
+        </div>
+      </nav>
+      <a href="index.html"><img src="IMG/profile-avatar.png" alt="logo" class="page-header__item"></a>
+
+    </header>
+
+    <main class="main-contact">
+      <h1 class="heading">Contact Information</h1>
+      <address>
+        Pierre Yue <br>
+        Markham, Ontario <br>
+        L6C 2W6 <br>
+        Canada <br>
+        Telephone: <a href="tel+11234567890"> +1 123 456 7890</a><br>
+        Skype: <a href="Skype:pierre.yue2">pierre.yue2</a><br>
+        Email: <a href="mailto:pierre1116@hotmail.com">pierre1116@hotmail.com</a><br>
+        <a href="mailto:pierre1116@hotmail.com">Contact Me</a>
+      </address>
+      <h2>Enter Your Details</h2>
+      <form action="https://formspree.io/f/mqkgowwg" method="post" id="contact-form">
+        <label class="standard-label" for="contact-email">Email: </label><br>
+        <input type="email" id="contact-email" placeholder="*" required><br>
+  
+        <label class="standard-label" for="contact-telephone">Telephone: (xxx-xxx-xxxx)</label><br>
+        <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
+  
+        <label class="standard-label" for="contact-message">Message: </label><br>
+        <textarea maxlength="240" id="contact-message" placeholder="*" required></textarea><br>
+  
+        <input type="submit" value="Send Message">
+      </form>
+    </main>
+
+    <!--Social Media Platforms-->
+    <footer class="page-footer">
+      <p>Follow Me On:</p>
+      <div class="social-media">
+        <!--Twitter-->
+      <i class="fab fa-twitter-square"></i>
+      <!--Github-->
+      <a href="https://github.com/plkyue" target="_blank">
+        <i class="fab fa-github" ></i>          
+      </a>
+      <!--Linkedin-->
+      <a href="https://www.linkedin.com/in/pierre-yue-05415386/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    </footer>
+
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>
