@@ -9,7 +9,6 @@
   --primary-color: #357b70;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
-  --visited-color: #05676e;
   --active-color: #489c79;
   --rising-sun-color: #edc655;
   --midday-sun-color: #fcffad;
@@ -20,10 +19,11 @@
   --real-teal: rgb(0, 128, 128);
   --black: rgb(0, 0, 0);
   --light-grey: rgb(211, 211, 211);
-  --font-size-regular: 25px;
+  --font-size-regular: 20px;
   --font-size-small: 15px;
   --font-size-h1: 50px;
   --font-size-h2: 35px;
+  --font-size-h3: 25px;
   --font-weight: 200px;
   --grid-gap: 20px;
   --grid-gap-project-list: 10px;
@@ -151,17 +151,19 @@ h2 {
   font-weight: var(--font-weight);
 }
 
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight);
+}
+
 h1,
 h2,
+h3,
 a,
 table,
 div,
 label {
   color: var(--primary-color);
-}
-
-a:visited {
-  color: var(--visited-color);
 }
 
 a:hover,
@@ -315,7 +317,7 @@ input[type='submit']:focus {
 
 .page-footer-index {
   bottom: 0;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   text-align: center;
 }
@@ -448,6 +450,9 @@ ul[role='project-list'] {
   h2 {
     font-size: var(--font-size-regular);
   }
+  h3 {
+    font-size: var(--font-size-regular);
+  }
   table {
     font-size: var(--font-size-small);
   }
@@ -512,6 +517,9 @@ ul[role='project-list'] {
     font-size: var(--font-size-regular);
   }
   h2 {
+    font-size: var(--font-size-regular);
+  }
+  h3 {
     font-size: var(--font-size-regular);
   }
   table {

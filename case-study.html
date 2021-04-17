@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Viewport for Mobile-viewing interface-->
+    <title>Flix-For-Fun Case Study</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--Normalize for checking web context-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet"> <!--Adding Google Font: Crimson Pro-->
+    <link rel="stylesheet" type="text/css" href="CSS/style.production.css"> <!--Linking to CSS document-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a href="work.html">Go back to Projects Page</a>
+    </header>
+
+    <main class="main-profile">
+      <h1 class="case-study-heading">Case Study: Flix-For-Fun</h1>
+
+      <h2>Overview</h2>
+      <p>This movie web application is built with the MERN stack. Users can create a profile to log in and receive access to
+        a full list of movies in the database. They can use the filter bar feature to search through a list of movies by title
+        and upon selecting the title, they can find related movie details including director or genre information. Users also 
+        have the option to favorite the movie, update their profile information or delete the account. 
+      </p>
+
+      <h2>Purpose & context</h2>
+      <p>Flix-For-Fun is a project I built where both the front-end and back-end was developed from scratch to demonstrate 
+        my coding skills and knowledge acquired from completing the CareerFoundry Full-Stack Web Development program.
+      </p>
+
+      <h2>Objective</h2>
+      <p>I was striving to add a captivating project to my web porfolio and to completely grasp the process of building a fully
+        fleshed-out web application. I wanted to familiarize myself with all the different tools and libraries being
+        utilized and to recognize the areas that can be improved so that I could learn to make better architectural decisions 
+        in my future projects.
+      </p>
+
+      <h2>Approach</h2>
+      <h3>Back End</h3>
+      <p>
+        RESTful API was created utilizing Node.js and Express.js and interacts with a non-relational database (MongoDB). The API 
+        is accessed via the four HTTP request methods(GET, POST, PUT, DELETE). CRUD methods are used(CREATE, READ, UPDATE, DELETE) 
+        to retrieve from/store data to MongoDB. The API provides movie information in JSON format.
+      </p>
+      <img class="case-study-photo" style=width:50vw src="IMG/successful-user-login.png" alt="sucessful-user-login">
+      <img class="case-study-photo" style=width:50vw src="IMG/getting-data-on-single-movie.png" alt="getting-data-on-single-movie">
+      <p><a href="https://github.com/yueymiqua/flix-for-fun" target="_blank">View Backend Code Repository</a></p>
+      <p>Postman was used to test the API endpoints. Authentication/authorization functionality was implemented in the backend in 
+        the form of basic HTTP authentication for login and JWT authentication for subsequent URL endpoint requests.
+      </p>
+      <h3>Front End</h3>
+      <p>
+        Once my backend API was completed, The front-end client side of the application was built to allow users to make requests to get
+        information from the backend to render the webpage display(user interface). React was used to create the single-page 
+        application where different React components mount/unmount to change the UI. This way the application is quicker as all URL 
+        end points can be reached without needing to fetch more information from the backend pertaining to the request. The components
+        that get rendered on the page includes a Login View, Registration View(automatically directs back to Login View once profile is 
+        created), Movie List View, Movie Page View(allows access to the selected movie's Director/Genre View page and a button to "add 
+        movie to Favorites List"), and Profile View(allows user to update profile information, remove movie from Favorites List, and 
+        delete user profile). 
+      </p>
+      <img class="case-study-photo" style=width:50vw src="IMG/flix-for-fun-login.PNG" alt="flix-for-fun-login">
+      <img class="case-study-photo" style=width:50vw src="IMG/flix-for-fun-main-page.PNG" alt="flix-for-fun-main-page">
+      
+      <h2>Challenges</h2>
+      <p>The main challenges I faced in this project was first understanding how the react framework functioned. The other
+        challenge was figuring out what problems Redux was created to solve - this helps determine whether it should or should not
+        be used in a project. The amount of learning was tremendous in this project and I have become more proficient in building 
+        projects using this powerful technology (node/express/mongo for the back end and react/redux for the front end).
+      </p>
+      
+      <h2>Duration</h2>
+      <p>The overall project took approximately 4 weeks to build both the front and back end. This includes reading documentations,
+        and making all necessary revisions after the initial submission. The revisions would improve code quality, include additional 
+        features, and cleaning web styling for better user experience.
+      </p>
+
+      <div>
+        <h2>Credits</h2>
+        <p><strong>Mentor</strong> - John Akhilomen <br/><strong>Tutor</strong> - Jason Early<br/><strong>Career Specialist</strong> - Neha Hurpaul</p>
+      </div>
+
+    </main>
+
+    <footer class="page-footer-index">
+      <p>Follow Me On:</p>
+      <div class="social-media">
+          <!--Twitter-->
+        <i class="fab fa-twitter-square"></i>
+        <!--Github-->
+        <a href="https://github.com/yueymiqua" target="_blank">
+          <i class="fab fa-github"></i>          
+        </a>
+        <!--Linkedin-->
+        <a href="https://www.linkedin.com/in/pierre-yue-05415386/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>
